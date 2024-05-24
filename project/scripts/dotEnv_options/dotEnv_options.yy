@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"dotEnv_options",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dotEnv_options",
+  "parent":{
+    "name":"GM-dotEnv",
+    "path":"folders/Libraries/GM-dotEnv.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
