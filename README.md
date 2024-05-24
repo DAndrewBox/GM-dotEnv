@@ -1,5 +1,4 @@
-<div style="display: flex; gap: .5rem;">
-  <span>
+<img src="./assets/GM-dotEnv-logo.png" width="256" height="256">
 
 # GameMaker-dotEnv
 
@@ -10,35 +9,29 @@ GM-dotEnv is a library that loads environment variables from a .env file into Ga
 
 > It's completely based on [dotenv](https://www.npmjs.com/package/dotenv) on NPM and works in a very similar way with a few differences.
 
-  </span>
-
-  <img src="./assets/GM-dotEnv-logo.png" width="256" height="256">
-
-</div>
-
 ---
 
 - [GameMaker-dotEnv](#gamemaker-dotenv)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Toggling Features](#toggling-features)
-    - [Quick Start](#quick-start)
-  - [Multiple .env files](#multiple-env-files)
-  - [Docs](#docs)
+  - [🌱 Installation](#-installation)
+  - [🏗️ Usage](#️-usage)
+    - [🚩 Toggling Features](#-toggling-features)
+    - [🚀 Quick Start](#-quick-start)
+  - [🗃️ Multiple .env files](#️-multiple-env-files)
+  - [📖 Docs](#-docs)
     - [dotEnv\_init()](#dotenv_init)
     - [dotEnv\_config()](#dotenv_config)
     - [dotEnv\_load\_file()](#dotenv_load_file)
     - [dotEnv\_get()](#dotenv_get)
     - [dotEnv\_populate()](#dotenv_populate)
-  - [License](#license)
-  - [FAQ](#faq)
+  - [📜 License](#-license)
+  - [❓ FAQ](#-faq)
     - [Why is the .env file not loading my environment variables successfully?](#why-is-the-env-file-not-loading-my-environment-variables-successfully)
     - [Should I have multiple .env files?](#should-i-have-multiple-env-files)
     - [What rules does the parsing engine follow?](#what-rules-does-the-parsing-engine-follow)
 
 ---
 
-## Installation
+## 🌱 Installation
 
 - If you downloaded `GM-dotEnv` on GameMaker's Marketplace, you can import it using menu: Marketplace ➜ My Library.
 
@@ -48,9 +41,9 @@ GM-dotEnv is a library that loads environment variables from a .env file into Ga
 
 ---
 
-## Usage
+## 🏗️ Usage
 
-### Toggling Features
+### 🚩 Toggling Features
 
 You can toggle initial features by changing the macros on the `dotEnv_options` script. Here are the available options:
 
@@ -60,7 +53,7 @@ You can toggle initial features by changing the macros on the `dotEnv_options` s
 | `dotEnv_enable_debug`    | Enable debug messages and logs. You should disable this before production build. | `true`   |
 | `dotEnv_enable_override` | Enable overriding variables if they already exist.                               | `false`  |
 
-### Quick Start
+### 🚀 Quick Start
 
 Create a .env file in the included files of your project, you can add your environment variables there. Here is an example:
 
@@ -80,7 +73,8 @@ EMPTY_VAR =
 ;;; this is another comment
 ```
 
-> [!NOTE] > `dotEnv_init()` runs automatically before starting your game, just by adding this file to your project you should be able to read your variables.
+> [!NOTE]
+> The script `dotEnv_init()` runs automatically before starting your game, just by adding this file to your project you should be able to read your variables.
 
 Once you have your .env file, you can access the variables using the `dotEnv_get()` function. Here is an example:
 
@@ -91,7 +85,7 @@ show_debug_message("Environment: " + env);
 
 ---
 
-## Multiple .env files
+## 🗃️ Multiple .env files
 
 You can load multiple .env files by using the `dotEnv_load_file()` function. This function will load the variables from the file and merge them with the current environment.
 
@@ -107,7 +101,7 @@ This will load the variables from `local.env` and `prod.env` and merge them with
 
 ---
 
-## Docs
+## 📖 Docs
 
 ### dotEnv_init()
 
@@ -178,13 +172,13 @@ The example above will add a new variable called `NEW_VAR` with the value `New V
 
 ---
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 ### Why is the .env file not loading my environment variables successfully?
 
