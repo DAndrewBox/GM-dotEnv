@@ -35,7 +35,7 @@ GM-dotEnv is a library that loads environment variables from a .env file into Ga
 
 - If you downloaded `GM-dotEnv` on GameMaker's Marketplace, you can import it using menu: Marketplace ➜ My Library.
 
-- If you downloaded from Github, you can import it using menu: Tools ➜ Import Local Asset Package, or by dragging and dropping the `.yymps` file onto the workspace area of the GameMaker window.
+- If you downloaded from Github or itch.io, you can import it using menu: Tools ➜ Import Local Asset Package, or by dragging and dropping the `.yymps` file onto the workspace area of the GameMaker window.
 
 - Import the assets (extension, object, and included files) from the package.
 
